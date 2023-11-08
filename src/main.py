@@ -10,8 +10,78 @@ def main():
 	#testlistSearch()
 	#testListPosition()
 	#testListCopy()
-	testListCopyWithTail()
+	#testListCopyWithTail()
+	assignment()
 
+def assignment():
+	#Question 1
+	head = node(2, None)
+	head = node("=", head)
+	head = node(1, head)
+	head= node("+", head)
+	head= node(1, head)
+
+	#Question 2
+	operator = head
+
+	#Question 3
+	operator = operator.getLink()
+
+	#Question 4
+	result=head
+
+	#Question 5
+	result = result.getLink()
+	result = result.getLink()
+	result = result.getLink()
+	result = result.getLink()
+
+	#QUestion 6
+	operator.setData('-')
+	result.setData(0)
+
+	#Question 7
+	operator.setData('*')
+	result.setData(1)
+
+	# QUestion 8
+	operator.setData('/')
+	result.setData(1)
+
+	#Question 9
+	head.setData(7)
+	result.setData(7)
+
+	#Question 10
+	operator = operator.getLink()
+
+	#Question 11
+	operator.removeNodeAfter()
+	head.removeNodeAfter()
+
+	#question 12
+	print('Head contains', node.listlength(head), 'Nodes')
+	print('Operator contains', node.listlength(operator), 'Nodes')
+	print('Result contains', node.listlength(result), 'Nodes')
+
+	#Question 13
+	print("Head Contains Character", node.listSearch(head, 1).getData())
+	print("Operator Contains Character", node.listSearch(operator, 1).getData())
+	if (node.listSearch(result, 1) != None):
+		print("Result Contains", node.listSearch(result, 1).getData())
+	else:
+		print("Result doesn't contain 1.")
+
+	#Question 14
+	copy0=head.listCopy
+	copy1=result.listCopy
+
+	#Question 15
+	print('Copy0 contains', node.listlength(head), 'Nodes')
+	print('Copy1 contains', node.listlength(result), 'Nodes')
+	
+
+	
 def testListCopyWithTail():
 	print('Testing List Copy')
 	#construct a node with data equal to S and link equal to None
