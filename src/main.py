@@ -1,17 +1,38 @@
 from node.node import *
+from stack.stack import *
 
 def main():
-	# testinit()
-	# testGettersAndSetters()
-	#testAddNodeAfter()
-	#testRemoveNodeAfter()
-	#review()
-	#testListLength()
-	#testlistSearch()
-	#testListPosition()
-	#testListCopy()
-	#testListCopyWithTail()
-	assignment()
+	testPush()
+
+def testPush():
+	print("Testing Push Method in Stack Class")
+
+	s = stack()
+	print("Stack size is", s.size()) #0
+	print("Stack contains:", s)  #[]
+
+	s.push('S')
+	
+	print("Stack size is", s.size()) #1
+	print("stack contains:", s)      #[S]
+
+	#s.push('B')
+	s.push(1)
+	print("Stack size is", s.size()) #2
+	print("stack contains:", s)      #[B, S]
+
+	#s.push('O')
+	s.push((1,2))
+	print("Stack size is", s.size()) #3
+	print("stack contains:", s)      #[O, B, S]
+
+	#s.push('J')
+	s.push([1,2,3])
+	print("Stack size is", s.size()) #4
+	print("stack contains:", s)      #[J, O, B, S]
+
+
+
 
 def assignment():
 	#Question 1
