@@ -2,7 +2,7 @@ from stack.stack import *
 
 class balancedparens:
 	@staticmethod
-	def isBalanced(expression, str):
+	def isBalanced(expression:str):
 		"""Checks a specified mathmatical expression to see
 		  when the parenthesis are balanced
 
