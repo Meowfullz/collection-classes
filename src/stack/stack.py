@@ -128,3 +128,13 @@ class stack:
 
 			# return data in node at the head (top) of the calling stack
 			return top
+		
+		def selectionsort (data: stack, first:int):
+			"""sorts a stack from smallest to largest bypassing the nodes to the 
+			left of the of first
+
+			Args:
+				data (stack): stack to be sorted
+				first (int): the node position at which the sort will begin
+			"""
+			
