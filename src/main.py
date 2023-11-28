@@ -18,6 +18,7 @@ def main():
 	print("(5+2)-(3*(6/9))) = ", calculator.evaluate('(5+2)-(3*(6/9)))'))
 	print("(5+2)-(3*(6/2))) = ", calculator.evaluate('((5*2)-(3*(6/2)))'))
 	# testSerialSearch()
+	# moved to main2
 
 def testSerialSearch():
 	# create an empty stack
