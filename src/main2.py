@@ -1,26 +1,37 @@
 from queues.queue import  *
+from queues.palindrometest import *
 
-from queues.newpalindrome import *
 def main():
 	# testEnqueue()
 	# print('\n')
 	# testQueueIsEmpty()
-	# print('\n')
+	# print('\n')w
 	# testingPeekQueue()
 	# print('\n')
 	# testDequeue()
 	# testPalindrome()
-	testNewPalindrome()
+	#testNewPalindrome()
+	palindromeAssessment()
 
-def testNewPalindrome():
+def palindromeAssessment():
 	while True:
-		i = input('Enter string')
+		i = input('Enter string: ')
 		if (palindrome.isPalindrome(i)):
 			print('Is a Palindrome')
 		else: 
 			print('Not a Palindrome')
 		if not i:
 			break
+
+# def testNewPalindrome():
+# 	while True:
+# 		i = input('Enter string')
+# 		if (palindrome.isPalindrome(i)):
+# 			print('Is a Palindrome')
+# 		else: 
+# 			print('Not a Palindrome')
+# 		if not i:
+# 			break
 
 
 # def testPalindrome():

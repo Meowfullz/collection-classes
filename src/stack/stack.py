@@ -32,7 +32,7 @@ class stack:
 		"""
 		return self.__tail
 	
-	def getData(self):
+	def getDatas(self):
 		cursor = self.__head # used to step through the nodes
 		data = ""      # string representation of data values in the calling stack
 		i = 1   # used to count the nodes in the calling stack
